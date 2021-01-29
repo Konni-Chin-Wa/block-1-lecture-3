@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 1 Lecture 3</title>
+</head>
+<body>
+    <form>
+        <!--hidden fields are used to valid that the form is from the person you sent the page to -->
+        <input type="hidden" id="form-id" value="fihguehvffda35nsaoo541"/>
+        <!--Form fields-->
+        <label for="my-text">Enter some text:</label>
+        <input type="text" name="some-text" id="my-text"/><br/>
+         <!--no label therefore clicking on the words does not allow text into box-->
+        Website: <input type="text" name="website"/><br/>
+        Computer: <input type="text" name="computer"/><br/>
+
+        <label for="my-password">Password:</label>
+        <input type="password" name="password" id="password"/><br/>
+
+        <!--add in value, so gender is not "on"-->
+        <input type="radio" name="gender" id="male" value="m"/>
+        <label for="male">Male</label><br/>
+        <input type="radio" name="gender" id="female" value="f"/>
+        <label for="female">Female</label><br/>
+
+        <!--the "name" defines what group the radio buttons are in-->
+        <input type="radio" name="season" value="spring">Spring<br/>
+        <input type="radio" name="season" value="summer">Summer<br/>
+        <input type="radio" name="season" value="fall">Fall<br/>
+        <input type="radio" name="season" value="winter">Winter<br/>
+        
+        <!--option+command key+ up / down select multiple up/down-->
+        <input type="checkbox" name="season" value="spring">Spring<br/>
+        <input type="checkbox" name="season" value="summer">Summer<br/>
+        <input type="checkbox" name="season" value="fall">Fall<br/>
+        <input type="checkbox" name="season" value="winter">Winter<br/>
+        <hr/>
+
+        <!-- use the LABEL version-->
+        <input type="radio" name="season" id="spring"/>
+        <label for="spring">Spring</label>
+        <input type="radio" name="season" id="summer"/>
+        <label for="summer">Summer</label>
+        <input type="radio" name="season" id="fall"/>
+        <label for="fall">Fall</label>
+        <input type="radio" name="season" id="winter"/>
+        <label for="winter">Winter</label>
+        <br/><br/>
+        <input type="checkbox" name="season" id="spring"/>
+        <label for="spring">Spring</label><br/>
+        <input type="checkbox" name="season" id="summer"/>
+        <label for="summer">Summer</label><br/>
+        <input type="checkbox" name="season" id="fall"/>
+        <label for="fall">Fall</label><br/>
+        <input type="checkbox" name="season" id="winter"/>
+        <label for="winter">Winter</label><br/>
+        <hr/>
+
+        <label for="my-big-text">Enter some text:</label><br/>
+        <textarea name="my-big-text" id="my-big-text">
+Enter your 
+text here
+        </textarea><br/>
+        <hr/>
+
+        <!--single choice selection-->
+        <select name="select-food">
+            <option>Mexican</option>
+            <option>Chinese</option>
+            <option>Vietnamese</option>
+            <option>Indian</option>
+        </select> <br/><br/>
+
+        <!--multiple choice selection-->
+        <select name="select-food" multiple="multiple">
+            <option>Mexican</option>
+            <option>Chinese</option>
+            <option>Vietnamese</option>
+            <option>Indian</option>
+        </select><br/>
+
+        <!--value what is submitted may be different from what the user sees-->
+        <select name="select-food[]" multiple="multiple">
+            <option value="mex">Mexican</option>
+            <option value="chn">Chinese</option>
+            <option value="vit">Vietnamese</option>
+            <option value="ind">Indian</option>
+        </select><br/>
+
+        <!--submission and reset-->
+        <input type="submit"/>
+        <input type="reset"/><br/>
+    </form>
+</body>
+</html>
